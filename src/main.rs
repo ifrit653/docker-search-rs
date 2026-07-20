@@ -4,7 +4,8 @@ use serde::Deserialize;
 #[derive(Parser, Debug)]
 #[command(
     name = "docker-search-rs",
-    about = "Docker image search with size info"
+    about = "Docker image search with size info",
+    version
 )]
 struct Cli {
     query: String,
